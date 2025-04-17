@@ -29,43 +29,7 @@ const teamMembers: TeamMember[] = [
       email: "gnanadeep@project-and.com"
     }
   },
-  {
-    id: "vamshi",
-    name: "Vamshi B",
-    role: "Technical Architect",
-    bio: "Expert in embedded systems with 8+ years of experience developing medical devices and autonomous systems.",
-    image: "https://via.placeholder.com/300x300?text=V",
-    links: {
-      github: "#",
-      linkedin: "#",
-      email: "vamshi@project-and.com",
-      website: "#"
-    }
-  },
-  {
-    id: "rajini",
-    name: "Rajini Reddy",
-    role: "Healthcare Specialist",
-    bio: "Medical professional with background in emergency response systems and telemedicine implementation.",
-    image: "https://via.placeholder.com/300x300?text=R",
-    links: {
-      linkedin: "#",
-      email: "rajini@project-and.com"
-    }
-  },
-  {
-    id: "shiva",
-    name: "Shivakrishna Reddy",
-    role: "UX/Software Designer",
-    bio: "Specializes in creating intuitive interfaces for mission-critical applications in high-stress environments.",
-    image: "https://via.placeholder.com/300x300?text=S",
-    links: {
-      github: "#",
-      linkedin: "#",
-      email: "shiva@project-and.com",
-      website: "#"
-    }
-  }
+ 
 ];
 
 const TeamSection: React.FC = () => {
