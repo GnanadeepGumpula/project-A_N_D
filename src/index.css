@@ -1,0 +1,97 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 39 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 39 90% 60%;
+    --secondary-foreground: 0 0% 0%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 39 100% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 39 70% 30%;
+    --input: 39 70% 30%;
+    --ring: 39 100% 50%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-black text-foreground font-sans scroll-smooth;
+    font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
+  }
+
+  /* Project A_N_D Custom Styles */
+  .glass-card {
+    @apply bg-black/60 backdrop-blur-xl border border-amber-500/20 rounded-xl shadow-lg;
+  }
+
+  .glass-button {
+    @apply bg-black/70 hover:bg-black/80 backdrop-blur-sm border border-amber-500/30 rounded-lg transition-all duration-300;
+  }
+
+  .grid-bg {
+    @apply bg-grid-pattern bg-[length:40px_40px];
+  }
+
+  .text-glow {
+    text-shadow: 0 0 15px rgba(245, 158, 11, 0.7);
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .tag-label {
+    @apply inline-flex items-center rounded-full bg-amber-500/20 px-2.5 py-0.5 text-xs font-medium text-amber-400;
+  }
+
+  .interactive-button {
+    @apply relative overflow-hidden rounded-lg bg-amber-500 px-6 py-3 text-black transition-all duration-300 hover:bg-amber-600 hover:shadow-lg hover:shadow-amber-500/40 focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2;
+  }
+
+  .interactive-button::before {
+    @apply absolute inset-0 -z-10 transform transition-transform duration-500 ease-in-out content-[''];
+    background: linear-gradient(45deg, rgba(245, 158, 11, 0.2), rgba(0, 0, 0, 0));
+    transform: translateX(-100%);
+  }
+
+  .interactive-button:hover::before {
+    transform: translateX(0);
+  }
+}
