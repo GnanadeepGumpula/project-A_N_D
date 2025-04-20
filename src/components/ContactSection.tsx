@@ -45,7 +45,7 @@ const ContactSection: React.FC = () => {
                     <Mail className="text-drone-blue mr-3 mt-1" size={20} />
                     <div>
                       <p className="text-white font-medium">Email Us</p>
-                      <a href="mailto:info@project-and.com" className="text-white/70 hover:text-drone-blue">info@project-and.com</a>
+                      <a href="mailto:gumpulagnanadeep@gmail.com" className="text-white/70 hover:text-drone-blue">info@project-and.com</a>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -62,9 +62,6 @@ const ContactSection: React.FC = () => {
                   <h4 className="font-medium text-white mb-2">Current Partners</h4>
                   <div className="flex flex-wrap gap-4">
                     <div className="w-10 h-10 bg-white/20 rounded-full"></div>
-                    <div className="w-10 h-10 bg-white/20 rounded-full"></div>
-                    <div className="w-10 h-10 bg-white/20 rounded-full"></div>
-                    <div className="w-10 h-10 bg-white/20 rounded-full"></div>
                   </div>
                 </div>
               </div>
@@ -77,7 +74,7 @@ const ContactSection: React.FC = () => {
                       <label htmlFor="name" className="text-white text-sm">Your Name</label>
                       <Input 
                         id="name" 
-                        placeholder="John Doe" 
+                        placeholder="Gnanadeep Gumpula" 
                         required 
                         className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
                       />
@@ -87,7 +84,7 @@ const ContactSection: React.FC = () => {
                       <Input 
                         id="email" 
                         type="email" 
-                        placeholder="john@example.com" 
+                        placeholder="gumpulagnanadeep@gmail.com" 
                         required 
                         className="bg-white/10 border-white/20 text-white placeholder:text-white/50"
                       />
